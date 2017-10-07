@@ -1,9 +1,7 @@
 <?php
 //echo "here";
-$sum=0;
-foreach($argv as $value)
-{
-$sum +=$value;
- // echo "$value\n";
-}
-echo "Sum is : ".$sum;
+$temp = $argv[2];
+$arr=explode(",",$temp);
+
+echo array_sum($arr); 
+//echo "Sum is : ".$sum;

@@ -1,0 +1,18 @@
+<?php
+//echo "here";
+$sum=0;
+
+$temp = $argv[2];
+echo "temp".$temp;
+$arr=explode(",",$temp);
+print_r($arr);
+echo array_sum($arr); 
+foreach($argv as $value)
+{
+//$sum +=$value;
+$temp=$value[1];
+
+
+  echo "$value\n";
+}
+echo "Sum is : ".$sum;
