@@ -2,9 +2,9 @@
 //echo "here";
 $temp = $argv[2];
 
-$temp =trim($temp, "\n");
-echo 'str: '.$temp;
-die();
+
+$temp1 = str_replace("\r\n",'',$temp) ;
+$temp1 = str_replace("n",',',$temp1) ;
 $arr=explode(",",$temp);
 
 echo array_sum($arr); 
